@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number</title>
+
+</head>
+<body>
+    <h1>maghlob a Number</h1>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="reverseNumber()">maghlob konid</button>
+    <p id="result"></p>
+
+    <script>
+        function reverseNumber() {
+            const input = document.getElementById('numberInput').value;
+            if (input === "") {
+                document.getElementById('result').textContent = "Please enter a number.";
+                return;
+            }
+            const reversed = input.split('').reverse().join('');
+            document.getElementById('result').textContent = `maghlob Number: ${reversed}`;
+        }
+    </script>
+</body>
+</html>
